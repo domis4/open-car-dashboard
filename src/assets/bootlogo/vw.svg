@@ -1,0 +1,25 @@
+<svg xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" width="192" height="192" id="svg2" sodipodi:version="0.32" inkscape:version="0.46" sodipodi:docname="Volkswagen Logo.svg" inkscape:output_extension="org.inkscape.output.svg.inkscape">
+  <!-- https://upload.wikimedia.org/wikipedia/commons/a/a1/Volkswagen_Logo_till_1995.svg -->
+  <metadata id="metadata19">
+    <rdf:RDF>
+      <cc:Work rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <sodipodi:namedview inkscape:window-height="968" inkscape:window-width="1280" inkscape:pageshadow="2" inkscape:pageopacity="0.0" guidetolerance="10.0" gridtolerance="10.0" objecttolerance="10.0" borderopacity="1.0" bordercolor="#666666" pagecolor="#ffffff" id="base" showgrid="false" inkscape:zoom="2.3967877" inkscape:cx="119.83189" inkscape:cy="112.06224" inkscape:window-x="0" inkscape:window-y="22" inkscape:current-layer="g12"/>
+  <defs id="defs4">
+    <inkscape:perspective sodipodi:type="inkscape:persp3d" inkscape:vp_x="0 : 96.378998 : 1" inkscape:vp_y="0 : 1000 : 0" inkscape:vp_z="192.758 : 96.378998 : 1" inkscape:persp3d-origin="96.378998 : 64.252665 : 1" id="perspective21"/>
+    <marker id="ArrowEnd" viewBox="0 0 10 10" refX="0" refY="5" markerUnits="strokeWidth" markerWidth="4" markerHeight="3" orient="auto">
+      <path d="M 0 0 L 10 5 L 0 10 z" id="path7"/>
+    </marker>
+    <marker id="ArrowStart" viewBox="0 0 10 10" refX="10" refY="5" markerUnits="strokeWidth" markerWidth="4" markerHeight="3" orient="auto">
+      <path d="M 10 0 L 0 5 L 10 10 z" id="path10"/>
+    </marker>
+  </defs>
+  <g id="g12">
+    <path style="fill:#000;fill-opacity:1;fill-rule:evenodd;stroke:none" d="M 96.416231,0.82544309 C 149.02847,0.82544309 191.93735,43.729547 191.93735,96.420982 C 191.93735,148.95451 149.02847,191.93733 96.416231,191.93733 C 43.803393,191.93733 0.82045379,148.95451 0.82045379,96.420982 C 0.82045379,43.729547 43.803394,0.82067243 96.416231,0.82067243" id="path14"/>
+    <path style="fill:#ffffff;fill-rule:evenodd;stroke:none" d="M 96.416231,12.957334 C 142.29701,12.957334 179.80068,50.461006 179.80068,96.420982 C 179.80068,142.30176 142.29701,179.72672 96.416231,179.72672 C 50.540099,179.72672 13.036071,142.30176 13.036071,96.420982 C 13.036071,50.461005 50.540099,12.957334 96.420883,12.957334 L 96.416231,12.957334 z M 40.593427,51.555881 L 70.503454,129.14536 L 81.461158,100.80502 L 110.19735,100.80502 L 121.15446,129.14536 L 151.37685,50.619631 C 146.05156,44.19469 139.63258,38.71554 132.42882,34.489892 L 111.45086,92.269996 L 81.852475,92.269996 L 60.789712,34.25255 C 53.041975,38.71554 46.230606,44.585888 40.593427,51.555882 L 40.593427,51.555881 z M 163.43838,71.053736 L 129.37796,159.91638 C 152.24393,147.93954 167.97651,123.97869 167.97651,96.420979 C 167.97651,87.494759 166.41172,78.959976 163.43838,71.053732 L 163.43838,71.053736 z M 114.50171,165.70802 L 114.26914,163.90946 L 95.791865,115.99254 L 77.310051,163.90946 L 77.235509,165.39554 C 83.338667,167.12015 89.758598,167.97649 96.416231,167.97649 C 102.67754,167.97649 108.70651,167.19409 114.50172,165.70802 L 114.50171,165.70802 z M 62.047626,159.13399 L 28.84832,72.618525 C 26.188058,80.054855 24.776527,88.044586 24.776527,96.420982 C 24.776527,123.35373 39.810675,146.99733 62.047626,159.13399 L 62.047626,159.13399 z M 96.416231,24.781516 C 102.68231,24.781516 108.86514,25.563911 114.73906,27.129894 L 96.653812,77.161425 L 78.488772,27.049984 C 84.205264,25.563912 90.233879,24.781516 96.416231,24.781516" id="path16"/>
+  </g>
+</svg>
