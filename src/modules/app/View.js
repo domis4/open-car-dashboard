@@ -1,3 +1,4 @@
+//@flow
 import React from 'react'
 import { Provider } from 'react-redux'
 import { store, history } from '../../create-store'
@@ -13,6 +14,12 @@ import MainMenu from '../main-menu'
 import MusicPlayer from '../music-player'
 import Settings from '../settings'
 import Maps from '../google-maps'
+
+type propTypes = {
+  classes: {},
+  isBootIconVisible: boolean,
+  setBootIconVisible: (state: boolean) => void,
+}
 
 function getTheme(theme) {
   return createMuiTheme({
@@ -41,7 +48,7 @@ const theme = getTheme({
   paletteType: 'dark',
 })
 
-const App = ({ classes, isBootIconVisible, setBootIconVisible }) => (
+const App = ({ classes, isBootIconVisible, setBootIconVisible }: propTypes) => (
   <Provider {...{ store }}>
     <ConnectedRouter history={history}>
       <MuiThemeProvider theme={theme}>
