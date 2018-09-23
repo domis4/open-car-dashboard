@@ -1,0 +1,49 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`main-menu module index.js expects component to match snapshot 1`] = `
+<WithStyles(Drawer)
+  classes={
+    Object {
+      "paper": "View-drawerPaper-04",
+    }
+  }
+  variant="permanent"
+>
+  <WithStyles(List)
+    className="View-top-01"
+  >
+    <WithStyles(ListItem)
+      button={true}
+      className="View-center-06"
+      onClick={[Function]}
+    >
+      <pure(ArrowBackIosIcon) />
+    </WithStyles(ListItem)>
+    <WithStyles(ListItem)
+      button={true}
+      className="View-center-06"
+      onClick={[Function]}
+    >
+      <pure(FilterNoneIcon) />
+    </WithStyles(ListItem)>
+  </WithStyles(List)>
+  <WithStyles(List)
+    className="View-bottom-03"
+  >
+    <WithStyles(ListItem)
+      className="View-center-06"
+    >
+      <withState(lifecycle(WithStyles(View))) />
+    </WithStyles(ListItem)>
+    <WithStyles(ListItem)
+      button={true}
+      className="View-center-06"
+      onClick={[Function]}
+    >
+      <div
+        className="View-apps-07"
+      />
+    </WithStyles(ListItem)>
+  </WithStyles(List)>
+</WithStyles(Drawer)>
+`;
