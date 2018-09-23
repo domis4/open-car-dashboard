@@ -1,0 +1,67 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`dashboard module View.js expects component to match snapshot 1`] = `
+<div>
+  <WithStyles(Grid)
+    container={true}
+    spacing={24}
+  >
+    <WithStyles(Grid)
+      item={true}
+      xs={3}
+    >
+      <WithStyles(Paper)>
+        <WithStyles(View)
+          callback={[Function]}
+          image={
+            Object {
+              "process": [Function],
+            }
+          }
+          title="Music"
+        />
+      </WithStyles(Paper)>
+    </WithStyles(Grid)>
+    <WithStyles(Grid)
+      item={true}
+      xs={3}
+    >
+      <WithStyles(Paper)>
+        <WithStyles(View)
+          callback={[Function]}
+          image={
+            Object {
+              "process": [Function],
+            }
+          }
+          title="Settings"
+        />
+      </WithStyles(Paper)>
+    </WithStyles(Grid)>
+    <WithStyles(Grid)
+      item={true}
+      xs={3}
+    >
+      <WithStyles(Paper)>
+        <WithStyles(View)
+          callback={[Function]}
+          image={
+            Object {
+              "process": [Function],
+            }
+          }
+          title="Google Maps"
+        />
+      </WithStyles(Paper)>
+    </WithStyles(Grid)>
+    <WithStyles(Grid)
+      item={true}
+      xs={3}
+    >
+      <WithStyles(Paper)>
+        <WithStyles(View) />
+      </WithStyles(Paper)>
+    </WithStyles(Grid)>
+  </WithStyles(Grid)>
+</div>
+`;
