@@ -4,3 +4,4 @@ assets/bootlogo/*
 !assets/bootlogo/sample.svg
 dist/
 dist-bundle
+yarn-error.log
