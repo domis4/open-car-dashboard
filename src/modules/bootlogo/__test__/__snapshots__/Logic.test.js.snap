@@ -1,0 +1,10 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`bootlogo module Logic.js expects component to match snapshot 1`] = `
+<lifecycle(Dummy)
+  fadeIn={true}
+  setFadeIn={[Function]}
+  setShowElement={[Function]}
+  showElement={true}
+/>
+`;
