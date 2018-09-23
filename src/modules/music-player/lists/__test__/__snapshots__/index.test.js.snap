@@ -1,0 +1,76 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`music-player list module index.js expects component to match snapshot 1`] = `
+<WithStyles(Paper)
+  className="View-root-01"
+>
+  <WithStyles(Typography)
+    component="h1"
+  >
+    Playlists
+  </WithStyles(Typography)>
+  <WithStyles(Table)
+    className="View-table-02"
+  >
+    <WithStyles(TableHead)>
+      <WithStyles(TableRow)>
+        <WithStyles(TableCell)>
+          Title
+        </WithStyles(TableCell)>
+      </WithStyles(TableRow)>
+    </WithStyles(TableHead)>
+    <WithStyles(TableBody)>
+      <WithStyles(TableRow)
+        key="1"
+      >
+        <WithStyles(TableCell)
+          component="th"
+          scope="row"
+        >
+          Playlist 1
+        </WithStyles(TableCell)>
+      </WithStyles(TableRow)>
+      <WithStyles(TableRow)
+        key="2"
+      >
+        <WithStyles(TableCell)
+          component="th"
+          scope="row"
+        >
+          Playlist 2
+        </WithStyles(TableCell)>
+      </WithStyles(TableRow)>
+      <WithStyles(TableRow)
+        key="3"
+      >
+        <WithStyles(TableCell)
+          component="th"
+          scope="row"
+        >
+          Playlist 3
+        </WithStyles(TableCell)>
+      </WithStyles(TableRow)>
+      <WithStyles(TableRow)
+        key="4"
+      >
+        <WithStyles(TableCell)
+          component="th"
+          scope="row"
+        >
+          Playlist 4
+        </WithStyles(TableCell)>
+      </WithStyles(TableRow)>
+      <WithStyles(TableRow)
+        key="5"
+      >
+        <WithStyles(TableCell)
+          component="th"
+          scope="row"
+        >
+          Playlist 5
+        </WithStyles(TableCell)>
+      </WithStyles(TableRow)>
+    </WithStyles(TableBody)>
+  </WithStyles(Table)>
+</WithStyles(Paper)>
+`;
