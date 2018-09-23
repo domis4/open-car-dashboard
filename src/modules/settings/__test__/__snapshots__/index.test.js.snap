@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`settings module index.js expects component to match snapshot 1`] = `
+<View
+  classes={
+    Object {
+      "bottom": "withState-View--bottom-02",
+      "root": "withState-View--root-01",
+    }
+  }
+  setTabValue={[Function]}
+  tabValue="lists"
+/>
+`;

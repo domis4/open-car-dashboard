@@ -1,0 +1,130 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`settings list module View.js expects component to match snapshot 1`] = `
+<Paper
+  classes={
+    Object {
+      "elevation0": "MuiPaper-elevation0-03",
+      "elevation1": "MuiPaper-elevation1-04",
+      "elevation10": "MuiPaper-elevation10-013",
+      "elevation11": "MuiPaper-elevation11-014",
+      "elevation12": "MuiPaper-elevation12-015",
+      "elevation13": "MuiPaper-elevation13-016",
+      "elevation14": "MuiPaper-elevation14-017",
+      "elevation15": "MuiPaper-elevation15-018",
+      "elevation16": "MuiPaper-elevation16-019",
+      "elevation17": "MuiPaper-elevation17-020",
+      "elevation18": "MuiPaper-elevation18-021",
+      "elevation19": "MuiPaper-elevation19-022",
+      "elevation2": "MuiPaper-elevation2-05",
+      "elevation20": "MuiPaper-elevation20-023",
+      "elevation21": "MuiPaper-elevation21-024",
+      "elevation22": "MuiPaper-elevation22-025",
+      "elevation23": "MuiPaper-elevation23-026",
+      "elevation24": "MuiPaper-elevation24-027",
+      "elevation3": "MuiPaper-elevation3-06",
+      "elevation4": "MuiPaper-elevation4-07",
+      "elevation5": "MuiPaper-elevation5-08",
+      "elevation6": "MuiPaper-elevation6-09",
+      "elevation7": "MuiPaper-elevation7-010",
+      "elevation8": "MuiPaper-elevation8-011",
+      "elevation9": "MuiPaper-elevation9-012",
+      "root": "MuiPaper-root-01",
+      "rounded": "MuiPaper-rounded-02",
+    }
+  }
+  component="div"
+  elevation={2}
+  square={false}
+>
+  <WithStyles(Typography)
+    component="h1"
+  >
+    Settings
+  </WithStyles(Typography)>
+  <WithStyles(Table)>
+    <WithStyles(TableBody)>
+      <WithStyles(TableRow)
+        key="1"
+      >
+        <WithStyles(TableCell)
+          component="th"
+          scope="row"
+        >
+          <span>
+            <pure(AirplanemodeActiveIcon) />
+            Airplane Mode
+          </span>
+        </WithStyles(TableCell)>
+        <WithStyles(TableCell)
+          numeric={true}
+        />
+      </WithStyles(TableRow)>
+      <WithStyles(TableRow)
+        key="2"
+      >
+        <WithStyles(TableCell)
+          component="th"
+          scope="row"
+        >
+          <span>
+            <pure(NetworkWifiIcon) />
+            Wi-Fi
+          </span>
+        </WithStyles(TableCell)>
+        <WithStyles(TableCell)
+          numeric={true}
+        />
+      </WithStyles(TableRow)>
+      <WithStyles(TableRow)
+        key="3"
+      >
+        <WithStyles(TableCell)
+          component="th"
+          scope="row"
+        >
+          <span>
+            <pure(BluetoothIcon) />
+            Bluetooth
+          </span>
+        </WithStyles(TableCell)>
+        <WithStyles(TableCell)
+          numeric={true}
+        />
+      </WithStyles(TableRow)>
+      <WithStyles(TableRow)
+        key="4"
+      >
+        <WithStyles(TableCell)
+          component="th"
+          scope="row"
+        >
+          <span>
+            <pure(NetworkCellIcon) />
+            Cellular
+          </span>
+        </WithStyles(TableCell)>
+        <WithStyles(TableCell)
+          numeric={true}
+        />
+      </WithStyles(TableRow)>
+      <WithStyles(TableRow)
+        key="5"
+      >
+        <WithStyles(TableCell)
+          component="th"
+          scope="row"
+        >
+          <span>
+            <pure(SettingsIcon) />
+            General
+          </span>
+        </WithStyles(TableCell)>
+        <WithStyles(TableCell)
+          numeric={true}
+        />
+      </WithStyles(TableRow)>
+    </WithStyles(TableBody)>
+  </WithStyles(Table)>
+</Paper>
+`;
