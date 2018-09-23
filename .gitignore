@@ -5,3 +5,4 @@ assets/bootlogo/*
 dist/
 dist-bundle
 yarn-error.log
+coverage
