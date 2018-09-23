@@ -1,7 +1,7 @@
 import { compose, lifecycle, withState } from 'recompose'
 import moment from 'moment'
 
-const withLifecycle = lifecycle({
+export const withLifecycle = lifecycle({
   componentDidMount() {
     const { setTime } = this.props
     const updateClock = () =>

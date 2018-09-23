@@ -1,0 +1,33 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`dashboard-app component index.js expects component to match snapshot 1`] = `
+<WithTheme(Zoom)
+  in={true}
+>
+  <WithStyles(Card)
+    onClick={[Function]}
+  >
+    <WithStyles(CardActionArea)>
+      <WithStyles(CardMedia)
+        className="View-media-01"
+        component="img"
+        image={
+          Object {
+            "process": [Function],
+          }
+        }
+      />
+      <WithStyles(CardContent)>
+        <WithStyles(Typography)
+          className="View-text-02"
+          component="h2"
+          gutterBottom={true}
+          variant="headline"
+        >
+          App Title
+        </WithStyles(Typography)>
+      </WithStyles(CardContent)>
+    </WithStyles(CardActionArea)>
+  </WithStyles(Card)>
+</WithTheme(Zoom)>
+`;

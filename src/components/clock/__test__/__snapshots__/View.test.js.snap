@@ -1,0 +1,57 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`clock component View.js expects component to match snapshot 1`] = `
+<Typography
+  align="inherit"
+  classes={
+    Object {
+      "alignCenter": "MuiTypography-alignCenter-014",
+      "alignJustify": "MuiTypography-alignJustify-016",
+      "alignLeft": "MuiTypography-alignLeft-013",
+      "alignRight": "MuiTypography-alignRight-015",
+      "body1": "MuiTypography-body1-010",
+      "body2": "MuiTypography-body2-09",
+      "button": "MuiTypography-button-012",
+      "caption": "MuiTypography-caption-011",
+      "colorError": "MuiTypography-colorError-025",
+      "colorInherit": "MuiTypography-colorInherit-020",
+      "colorPrimary": "MuiTypography-colorPrimary-021",
+      "colorSecondary": "MuiTypography-colorSecondary-022",
+      "colorTextPrimary": "MuiTypography-colorTextPrimary-023",
+      "colorTextSecondary": "MuiTypography-colorTextSecondary-024",
+      "display1": "MuiTypography-display1-05",
+      "display2": "MuiTypography-display2-04",
+      "display3": "MuiTypography-display3-03",
+      "display4": "MuiTypography-display4-02",
+      "gutterBottom": "MuiTypography-gutterBottom-018",
+      "headline": "MuiTypography-headline-06",
+      "noWrap": "MuiTypography-noWrap-017",
+      "paragraph": "MuiTypography-paragraph-019",
+      "root": "MuiTypography-root-01",
+      "subheading": "MuiTypography-subheading-08",
+      "title": "MuiTypography-title-07",
+    }
+  }
+  color="default"
+  component="p"
+  gutterBottom={false}
+  headlineMapping={
+    Object {
+      "body1": "p",
+      "body2": "aside",
+      "display1": "h1",
+      "display2": "h1",
+      "display3": "h1",
+      "display4": "h1",
+      "headline": "h1",
+      "subheading": "h3",
+      "title": "h2",
+    }
+  }
+  noWrap={false}
+  paragraph={false}
+  variant="body1"
+>
+  16:10
+</Typography>
+`;
