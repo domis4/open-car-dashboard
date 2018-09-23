@@ -1,0 +1,16 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`app module index.js expects component to match snapshot 1`] = `
+<WithStyles(App)
+  classes={
+    Object {
+      "app": "WithStyles-App--app-02",
+      "content": "WithStyles-App--content-03",
+      "root": "WithStyles-App--root-01",
+      "router": "WithStyles-App--router-04",
+    }
+  }
+  isBootIconVisible={true}
+  setBootIconVisible={[Function]}
+/>
+`;
