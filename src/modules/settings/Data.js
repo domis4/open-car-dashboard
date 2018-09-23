@@ -1,10 +1,3 @@
-import { compose, withState, lifecycle } from 'recompose'
+import { compose, withState } from 'recompose'
 
-export default compose(
-  withState('tabValue', 'setTabValue', 'lists'),
-  lifecycle({
-    componentDidMount() {
-      console.log('mounted')
-    },
-  })
-)
+export default compose(withState('tabValue', 'setTabValue', 'lists'))
