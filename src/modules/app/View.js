@@ -12,6 +12,7 @@ import Dashboard from '../dashboard'
 import MainMenu from '../main-menu'
 import MusicPlayer from '../music-player'
 import Settings from '../settings'
+import Maps from '../google-maps'
 
 function getTheme(theme) {
   return createMuiTheme({
@@ -54,7 +55,8 @@ const App = ({ classes, isBootIconVisible, setBootIconVisible }) => (
                   <Switch className={classes.router}>
                     <Route exact path="/" component={Dashboard} history={history} />
                     <Route path="/music/:tab?" component={MusicPlayer} history={history} />
-                    <Route path="/settings" component={Settings} history={history} when="always" />
+                    <Route path="/settings" component={Settings} history={history} />
+                    <Route path="/maps" component={Maps} history={history} />
                   </Switch>
                 </main>
               </div>
