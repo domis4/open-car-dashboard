@@ -7,7 +7,7 @@
     "start": "webpack-dev-server --config ./webpack.config.js --mode development",
     "build": "webpack --config ./webpack.config.js",
     "start:electron": "electron .",
-    "build:electron": "electron-builder"
+    "build:electron": "electron-builder --linux --arm64"
   },
   "dependencies": {
     "@fortawesome/fontawesome-free": "^5.3.1",
@@ -48,8 +48,8 @@
     "react-dom": "^16.3.2",
     "react-hot-loader": "^4.1.2",
     "style-loader": "^0.21.0",
-    "webpack": "^4.6.0",
-    "webpack-cli": "^2.0.15",
+    "webpack": "4.19.0",
+    "webpack-cli": "^2.1.4",
     "webpack-dev-server": "^3.1.3"
   }
 }

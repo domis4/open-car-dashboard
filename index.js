@@ -4,7 +4,7 @@ let mainWindow
 
 function createWindow() {
   mainWindow = new BrowserWindow({ width: 800, height: 600 })
-  mainWindow.loadFile('dist+/index.html')
+  mainWindow.loadFile('html-dist/index.html')
   mainWindow.on('closed', function() {
     mainWindow = null
   })
