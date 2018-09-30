@@ -3,8 +3,10 @@ const { app, BrowserWindow } = require('electron')
 let mainWindow
 
 function createWindow() {
-  mainWindow = new BrowserWindow({ width: 800, height: 600 })
-  mainWindow.loadFile('html-dist/index.html')
+  mainWindow = new BrowserWindow()
+  process.env.NODE_ENV === 'production' && mainWindow.maximize() 
+  process.env.NODE_ENV === 'production' && mainWindow.setFullScreen(true)
+  mainWindow.loadFile('./dist-bundle/index.html')
   mainWindow.on('closed', function() {
     mainWindow = null
   })
