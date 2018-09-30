@@ -3,3 +3,4 @@ node_modules
 assets/bootlogo/*
 !assets/bootlogo/sample.svg
 dist/
+dist-bundle
