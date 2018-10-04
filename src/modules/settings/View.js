@@ -2,6 +2,8 @@
 import React from 'react'
 import Zoom from '@material-ui/core/Zoom'
 import List from './lists'
+import Bluetooth from './bluetooth'
+import { Route } from 'react-router'
 
 type propTypes = {
   classes: {},
@@ -9,10 +11,11 @@ type propTypes = {
   setTabValue: string => void,
 }
 
-const View = ({ classes, tabValue = 'lists', setTabValue }: propTypes) => (
+const View = ({ classes, setTabValue }: propTypes) => (
   <Zoom in={true}>
     <div className={classes.root}>
-      <List />
+      <Route exact path="/settings" component={List} history={history} />
+      <Route path="/settings/bluetooth" component={Bluetooth} history={history} />
     </div>
   </Zoom>
 )
