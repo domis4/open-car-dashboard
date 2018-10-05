@@ -9,7 +9,6 @@ const styles = theme => ({
     width: '100%',
   },
   icon: {
-    top: '6px',
     position: 'relative',
     marginRight: '15px',
   },

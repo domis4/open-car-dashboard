@@ -3,77 +3,46 @@ import React from 'react'
 import Table from '@material-ui/core/Table'
 import TableBody from '@material-ui/core/TableBody'
 import TableCell from '@material-ui/core/TableCell'
-import AirplanemodeActive from '@material-ui/icons/AirplanemodeActive'
-import NetworkCell from '@material-ui/icons/NetworkCell'
-import NetworkWifi from '@material-ui/icons/NetworkWifi'
-import Bluetooth from '@material-ui/icons/Bluetooth'
-import Settings from '@material-ui/icons/Settings'
+import CircularProgress from '@material-ui/core/CircularProgress'
+import Switch from '@material-ui/core/Switch'
 import TableRow from '@material-ui/core/TableRow'
 import Paper from '@material-ui/core/Paper'
 import Typography from '@material-ui/core/Typography'
 
 type propTypes = {
   classes: {},
-  tabValue?: string,
-  setTabValue: string => void,
+  callRoute: () => {},
+  isBluetoothVisible: boolean,
+  handleBluetoothScanToggle: () => void,
+  currentlyScanning: boolean,
 }
 
-let id = 0
-function createData(title, children) {
-  id += 1
-  return { id, title, children }
-}
-
-const View = ({ classes, tabValue, setTabValue }: propTypes) => (
+const View = ({ classes, callRoute, isBluetoothVisible, handleBluetoothScanToggle, currentlyScanning }: propTypes) => (
   <Paper className={classes.root}>
     <Typography component="h1" className={classes.text}>
       Bluetooth
     </Typography>
     <Table className={classes.table}>
       <TableBody>
-        {[
-          createData(
-            <span>
-              <AirplanemodeActive className={classes.icon} />
-              {'Airplane Mode'}
-            </span>
-          ),
-          createData(
-            <span>
-              <NetworkWifi className={classes.icon} />
-              {'Wi-Fi'}
-            </span>
-          ),
-          createData(
-            <span>
-              <Bluetooth className={classes.icon} />
-              {'Bluetooth'}
-            </span>
-          ),
-          createData(
-            <span>
-              <NetworkCell className={classes.icon} />
-              {'Cellular'}
-            </span>
-          ),
-          createData(
-            <span>
-              <Settings className={classes.icon} />
-              {'General'}
-            </span>
-          ),
-        ].map(row => {
-          return (
-            <TableRow key={row.id}>
-              <TableCell component="th" scope="row">
-                {row.title}
-              </TableCell>
-              <TableCell numeric>{row.children}</TableCell>
-            </TableRow>
-          )
-        })}
+        <TableRow>
+          <TableCell component="th" scope="row">
+            {'Bluetooth'}
+          </TableCell>
+          <TableCell numeric>
+            <Switch
+              checked={isBluetoothVisible}
+              onChange={handleBluetoothScanToggle}
+              value="bluetooth"
+              color="primary"
+            />
+          </TableCell>
+        </TableRow>
       </TableBody>
     </Table>
+    <Typography component="h2" className={classes.text}>
+      {'Visible as xxxxx'}
+    </Typography>
+    {currentlyScanning && <CircularProgress />}
   </Paper>
 )
 

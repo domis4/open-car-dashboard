@@ -14,8 +14,8 @@ type propTypes = {
 const View = ({ classes, setTabValue }: propTypes) => (
   <Zoom in={true}>
     <div className={classes.root}>
-      <Route exact path="/settings" component={List} history={history} />
-      <Route path="/settings/bluetooth" component={Bluetooth} history={history} />
+      <Route exact path="/settings" component={List} />
+      <Route path="/settings/bluetooth" component={Bluetooth} />
     </div>
   </Zoom>
 )

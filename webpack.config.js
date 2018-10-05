@@ -3,6 +3,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin')
 
 module.exports = {
   entry: ['react-hot-loader/patch', './src/index.js'],
+  devtool: 'source-map',
   module: {
     rules: [
       {
@@ -41,7 +42,10 @@ module.exports = {
     publicPath: '',
     filename: 'bundle.js',
   },
-  plugins: [new webpack.HotModuleReplacementPlugin(), new HtmlWebpackPlugin({template: __dirname + '/src/index.html'})],
+  plugins: [
+    new webpack.HotModuleReplacementPlugin(),
+    new HtmlWebpackPlugin({ template: __dirname + '/src/index.html' }),
+  ],
   devServer: {
     contentBase: './dist-bundle',
     hot: true,
