@@ -1,6 +1,6 @@
 //@flow
 import React from 'react'
-import Logo from '../../assets/bootlogo/sample.svg'
+import Logo from '../../assets/bootlogo/vw.svg'
 import SVGInline from 'react-svg-inline'
 import Fade from '@material-ui/core/Fade'
 import Typography from '@material-ui/core/Typography'

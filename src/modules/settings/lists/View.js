@@ -3,6 +3,7 @@ import React from 'react'
 import Table from '@material-ui/core/Table'
 import TableBody from '@material-ui/core/TableBody'
 import TableCell from '@material-ui/core/TableCell'
+import ListItem from '@material-ui/core/ListItem'
 import AirplanemodeActive from '@material-ui/icons/AirplanemodeActive'
 import NetworkCell from '@material-ui/icons/NetworkCell'
 import NetworkWifi from '@material-ui/icons/NetworkWifi'
@@ -14,8 +15,7 @@ import Typography from '@material-ui/core/Typography'
 
 type propTypes = {
   classes: {},
-  tabValue?: string,
-  setTabValue: string => void,
+  callRoute: () => {},
 }
 
 let id = 0
@@ -24,7 +24,7 @@ function createData(title, children) {
   return { id, title, children }
 }
 
-const View = ({ classes, tabValue, setTabValue }: propTypes) => (
+const View = ({ classes, callRoute }: propTypes) => (
   <Paper className={classes.root}>
     <Typography component="h1" className={classes.text}>
       Settings
@@ -33,34 +33,34 @@ const View = ({ classes, tabValue, setTabValue }: propTypes) => (
       <TableBody>
         {[
           createData(
-            <span>
+            <ListItem button>
               <AirplanemodeActive className={classes.icon} />
               {'Airplane Mode'}
-            </span>
+            </ListItem>
           ),
           createData(
-            <span>
+            <ListItem button>
               <NetworkWifi className={classes.icon} />
               {'Wi-Fi'}
-            </span>
+            </ListItem>
           ),
           createData(
-            <span>
+            <ListItem button onClick={() => callRoute('/settings/bluetooth')}>
               <Bluetooth className={classes.icon} />
               {'Bluetooth'}
-            </span>
+            </ListItem>
           ),
           createData(
-            <span>
+            <ListItem button>
               <NetworkCell className={classes.icon} />
               {'Cellular'}
-            </span>
+            </ListItem>
           ),
           createData(
-            <span>
+            <ListItem button>
               <Settings className={classes.icon} />
               {'General'}
-            </span>
+            </ListItem>
           ),
         ].map(row => {
           return (
