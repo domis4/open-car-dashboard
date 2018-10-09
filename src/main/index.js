@@ -8,7 +8,7 @@ let mainWindow = null
 const isDevelopment = process.env.NODE_ENV !== 'production'
 
 function createWindow() {
-  mainWindow = new BrowserWindow()
+  mainWindow = new BrowserWindow({})
   !isDevelopment && mainWindow.maximize()
   !isDevelopment && mainWindow.setFullScreen(true)
   if (isDevelopment) {
