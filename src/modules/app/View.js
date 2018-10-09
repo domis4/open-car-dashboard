@@ -13,6 +13,7 @@ import MainMenu from '../main-menu'
 import MusicPlayer from '../music-player'
 import Settings from '../settings'
 import Maps from '../google-maps'
+import Notifications from '../notifications'
 
 function getTheme(theme) {
   return createMuiTheme({
@@ -52,6 +53,7 @@ const App = ({ classes, isBootIconVisible, setBootIconVisible }) => (
               <div className={classes.app}>
                 <MainMenu history={history} />
                 <main className={classes.content}>
+                  <Notifications />
                   <Switch className={classes.router}>
                     <Route exact path="/" component={Dashboard} history={history} />
                     <Route path="/music/:tab?" component={MusicPlayer} history={history} />

@@ -2,7 +2,8 @@ const webpack = require('webpack')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 
 module.exports = {
-  entry: ['react-hot-loader/patch', './src/index.js'],
+  target: 'electron-renderer',
+  entry: ['react-hot-loader/patch', './src/electron.js'],
   devtool: 'source-map',
   module: {
     rules: [
