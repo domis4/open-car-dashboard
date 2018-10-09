@@ -1,4 +1,3 @@
-//@flow
 import React from 'react'
 import Card from '@material-ui/core/Card'
 import CardActionArea from '@material-ui/core/CardActionArea'
@@ -8,14 +7,7 @@ import Typography from '@material-ui/core/Typography'
 import placeholder from '../../assets/placeholder/placeholder-app-icon.png'
 import Zoom from '@material-ui/core/Zoom'
 
-type propTypes = {
-  classes: {},
-  image?: any,
-  title?: string,
-  callback?: () => {},
-}
-
-const View = ({ classes, image, title, callback = () => {} }: propTypes) => (
+const View = ({ classes, image, title, callback = () => {} }) => (
   <Zoom in={true}>
     <Card className={classes.card} onClick={() => callback()}>
       <CardActionArea>

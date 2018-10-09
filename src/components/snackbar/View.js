@@ -1,13 +1,7 @@
-//@flow
 import React from 'react'
 import Snackbar from '@material-ui/core/Snackbar'
 
-type ViewPropTypes = {
-  text: string,
-  close: () => {},
-}
-
-const View = ({ text, close }: ViewPropTypes) => (
+const View = ({ text, close }) => (
   <Snackbar
     anchorOrigin={{ vertical: 'top', horizontal: 'center' }}
     open={true}

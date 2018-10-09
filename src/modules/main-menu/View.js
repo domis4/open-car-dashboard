@@ -1,4 +1,3 @@
-//@flow
 import React from 'react'
 import Drawer from '@material-ui/core/Drawer'
 import List from '@material-ui/core/List'
@@ -7,12 +6,7 @@ import Clock from '../../components/clock'
 import ArrowBackIos from '@material-ui/icons/ArrowBackIos'
 import FilterNone from '@material-ui/icons/FilterNone'
 
-type propTypes = {
-  classes: {},
-  history: {},
-}
-
-const View = ({ classes, history }: propTypes) => (
+const View = ({ classes, history }) => (
   <Drawer
     variant="permanent"
     classes={{

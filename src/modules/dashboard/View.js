@@ -1,4 +1,3 @@
-//@flow
 import React from 'react'
 import Paper from '@material-ui/core/Paper'
 import Grid from '@material-ui/core/Grid'
@@ -7,12 +6,7 @@ import musicImage from '../music-player/icon.png'
 import settingsIcon from '../settings/icon.png'
 import googleMapsIcon from '../google-maps/icon.png'
 
-type propTypes = {
-  classes: {},
-  history: {},
-}
-
-const View = ({ classes, history }: propTypes) => (
+const View = ({ classes, history }) => (
   <div className={classes.root}>
     <Grid container spacing={24}>
       <Grid item xs={3}>

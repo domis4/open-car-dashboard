@@ -1,3 +1,22 @@
 {
-  "extends": ["eslint-config-8select-flow", "eslint:recommended", "plugin:react/recommended"]
+  "extends": ["eslint-config-8select-flow", "eslint:recommended", "plugin:react/recommended"],
+  "overrides": [
+    {
+      "files": ["*.js"],
+      "rules": {
+        "react/prop-types": "off"
+      }
+    }
+  ],
+  "parser": "babel-eslint",
+  "parserOptions": {
+    "sourceType": "module"
+  },
+  "env": {
+    "browser": true,
+    "node": true
+  },
+  "globals": {
+    "__static": true
+  }
 }

@@ -1,10 +1,9 @@
-const { ipcMain } = require('electron')
-const { mainWindow } = require('../../electron')
-const { spawn } = require('child_process')
+import { ipcMain } from 'electron'
+import { spawn } from 'child_process'
 
 const bluetoothProcess = spawn(`bluetoothctl`)
 
-module.exports = () => {
+export default () => {
   ipcMain.on('enable-bluetooth', (event, command) => {
     bluetoothProcess.send('power on')
   })
@@ -23,7 +22,7 @@ module.exports = () => {
     bluetoothProcess.send('agent off')
   })
   bluetoothProcess.stdout.on('data', data => {
-    const awaitsPairing = data.toString().match('Authorize service')
-    awaitsPairing && mainWindow.webContents.send('bluetooth-awaits-pairing')
+    // const awaitsPairing = data.toString().match('Authorize service')
+    //awaitsPairing && mainWindow.webContents.send('bluetooth-awaits-pairing')
   })
 }

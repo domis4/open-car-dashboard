@@ -1,4 +1,3 @@
-//@flow
 import React from 'react'
 import Table from '@material-ui/core/Table'
 import TableBody from '@material-ui/core/TableBody'
@@ -9,15 +8,7 @@ import TableRow from '@material-ui/core/TableRow'
 import Paper from '@material-ui/core/Paper'
 import Typography from '@material-ui/core/Typography'
 
-type propTypes = {
-  classes: {},
-  callRoute: () => {},
-  isBluetoothVisible: boolean,
-  handleBluetoothScanToggle: () => void,
-  currentlyScanning: boolean,
-}
-
-const View = ({ classes, callRoute, isBluetoothVisible, handleBluetoothScanToggle, currentlyScanning }: propTypes) => (
+const View = ({ classes, callRoute, isBluetoothVisible, handleBluetoothScanToggle, currentlyScanning }) => (
   <Paper className={classes.root}>
     <Typography component="h1" className={classes.text}>
       Bluetooth

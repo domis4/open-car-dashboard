@@ -1,4 +1,3 @@
-//@flow
 import React from 'react'
 import Table from '@material-ui/core/Table'
 import TableBody from '@material-ui/core/TableBody'
@@ -13,18 +12,13 @@ import TableRow from '@material-ui/core/TableRow'
 import Paper from '@material-ui/core/Paper'
 import Typography from '@material-ui/core/Typography'
 
-type propTypes = {
-  classes: {},
-  callRoute: () => {},
-}
-
 let id = 0
 function createData(title, children) {
   id += 1
   return { id, title, children }
 }
 
-const View = ({ classes, callRoute }: propTypes) => (
+const View = ({ classes, callRoute }) => (
   <Paper className={classes.root}>
     <Typography component="h1" className={classes.text}>
       Settings

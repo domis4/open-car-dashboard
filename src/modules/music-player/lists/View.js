@@ -1,4 +1,3 @@
-//@flow
 import React from 'react'
 import Table from '@material-ui/core/Table'
 import TableBody from '@material-ui/core/TableBody'
@@ -7,12 +6,6 @@ import TableHead from '@material-ui/core/TableHead'
 import TableRow from '@material-ui/core/TableRow'
 import Paper from '@material-ui/core/Paper'
 import Typography from '@material-ui/core/Typography'
-
-type propTypes = {
-  classes: {},
-  tabValue?: string,
-  setTabValue: string => void,
-}
 
 let id = 0
 function createData(name, children) {
@@ -28,7 +21,7 @@ const rows = [
   createData('Playlist 5'),
 ]
 
-const View = ({ classes, tabValue, setTabValue }: propTypes) => (
+const View = ({ classes, tabValue, setTabValue }) => (
   <Paper className={classes.root}>
     <Typography component="h1" className={classes.text}>
       Playlists

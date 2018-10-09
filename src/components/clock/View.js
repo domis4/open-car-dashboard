@@ -1,13 +1,7 @@
-//@flow
 import React from 'react'
 import Typography from '@material-ui/core/Typography'
 
-type propTypes = {
-  classes: {},
-  time: String,
-}
-
-const View = ({ classes, time }: propTypes) => (
+const View = ({ classes, time }) => (
   <Typography component="p" className={classes.text}>
     {time}
   </Typography>

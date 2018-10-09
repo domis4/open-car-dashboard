@@ -1,5 +1,5 @@
-const bluetooth = require('./bluetooth/listener')
+import bluetooth from './bluetooth/listener'
 
-module.exports = () => {
+export default () => {
   bluetooth()
 }

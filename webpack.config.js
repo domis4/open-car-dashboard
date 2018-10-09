@@ -1,9 +1,6 @@
-const webpack = require('webpack')
-const HtmlWebpackPlugin = require('html-webpack-plugin')
-
 module.exports = {
-  target: 'electron-renderer',
-  entry: ['react-hot-loader/patch', './src/electron.js'],
+  target: 'electron-main',
+  entry: ['react-hot-loader/patch', './src/main/index.js'],
   devtool: 'source-map',
   module: {
     rules: [
@@ -38,17 +35,8 @@ module.exports = {
   resolve: {
     extensions: ['*', '.js', '.jsx'],
   },
-  output: {
-    path: __dirname + '/dist-bundle',
-    publicPath: '',
-    filename: 'bundle.js',
-  },
-  plugins: [
-    new webpack.HotModuleReplacementPlugin(),
-    new HtmlWebpackPlugin({ template: __dirname + '/src/index.html' }),
-  ],
   devServer: {
-    contentBase: './dist-bundle',
+    contentBase: './dist',
     hot: true,
   },
 }
