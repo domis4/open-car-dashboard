@@ -7,6 +7,8 @@ export const startAutoPairing = () => ipcRenderer.send('start-bluetooth-pairing'
 export const stopAutoPairing = () => ipcRenderer.send('stop-bluetooth-pairing')
 
 export default () => {
+  startBluetooth()
+  startAutoPairing()
   ipcRenderer.on('bluetooth-awaits-pairing', () => {
     addNotification('Incoming Bluetooth Connection')
   })
